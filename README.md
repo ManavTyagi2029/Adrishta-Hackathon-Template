@@ -42,7 +42,7 @@ Sublime/Atom text editors <br/>
 py -m venv env <br/>
 env\Scripts\activate <br/>
 set FLASK_APP=app.py <br/>
-
+flask run <br/>
 ### Screenshots
 
 
