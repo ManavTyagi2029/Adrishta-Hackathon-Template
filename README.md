@@ -1,19 +1,42 @@
-## Team Number \<Your Team Number> - \<Your Project Name>
-
-Team 36 - I Voted ! 
-
+## Team Number \<36> - \<I Voted !>
 
 ### Project Overview
+
+The problem statement is given below <br/>
 
 * With everything going online, why not the elections? And the major concern is security! As all elections are not such upscale like the college council elections, Disha Mamani, Vice President, College Council, wants to conduct the college council elections online and wants a secure platform to do so? She has the E-mail IDs of all the students  for any sort of communication. A solution is needed to her problem.
 
 Here we are asked to make a college council election portal to conduct college council elections where the anonymity of the voter is maintained to the admin(which indicates security) knowing that the admin has the email IDs of all the students.
 
-* Team 36 focused on a good user experience. It ensures that the voter does not vote twice.It allows administrator to add and remove candidate and have dynamic results.
+* Team 36 has developed a robust software which insured proper online voting without malicious practices. As mentioned in problem statement, The Admin already has a data set which consist of the Credentials of voters . Upon logging in there would be 2 dashboards for admin and voters respectively, the admin have functionality to add and remove the candidates and veiw results dynamically, Once the voter has voted it will not alllow to vote again
+
 
 ### Solution Description
+Team 36 has created 6 data bases- Admin,Voter_Records,President,Cultural,Mess_sec,G_sec respetively.The voters vote will remain anonymous to the admin. <br/>
 
-This project is mainly to help the colleges with college council elections since everything is going online. It’s a highly secured portal for college council elections(any other type of elections can also be hosted, but here talking of college council) where the anonymity of the voter is maintained to the admin. Here we have considered two positions who can login to the portal, an admin and a voter. The admin after logging in can add a new candidate, deleted an existing candidate and also check the results after voting. The voter after logging in can only vote for the standing positions, and once the voter completes their voting for all the positions among multiple candidates they automatically get logged out. And once a voter has logged in and voted they cannot re enter the portal and hence it provides more security. When the voter tries to re enter after voting once, in the url a message is shown “msg=Already+voted” For a candidate all their details i.e. name, email id, passport size photo, department, post for which they are standing and agenda are shown. These fields can only be entered by the admin while adding one candidate. All the details are shown to the voters for voting.
+As mentioned above, we have provided the credientials of the voters and the admin for testing purposes. <br/>
+
+Admin email: xyz@gmail.com Password: ivotexyz  <br/>
+Some of the voters have already voted. <br/>
+Voters List 
+1) Email id:gunjan12@gmail.com Password: 123pass <br/>
+2) Email id: codershah@gmail.com Password: abcd34  <br/>
+3) Email id: rohtagilaksh@gmail.com Password: janborn <br/>
+
+If the voter has voted then it will not be allowed to login again and if the votter has provided invalid credientials while logging in, then it will as the voter to try again.  <br/>
+
+when the admins logs in it can delete and Add a Candidate details, its aslo has results tabs which show dynmic result for each post <br/>
+
+when the votter logs in to portal the votter redirected to the Vice President voting page <br/>
+
+Once the votter has ticked the choice of candidate and pressed the vote button the votter will be redurected to the voting page for nrxt post and then logout eventally <br/>
+
+All the working video (part1 and part2) is uploaded in link below along with the presentation which provides the details discription
+link- https://drive.google.com/drive/folders/1thR8TBWnu5db4uHCOsF6J8cJuKVqbuK2?usp=sharing <br/>
+
+
+
+
 
 #### Architecture Diagram
 
@@ -28,15 +51,16 @@ This project is mainly to help the colleges with college council elections since
 
 #### Technical Description
 * What technologies/versions were used <br/>
-Flask <br/>
-Inbuilt module SQLite3 database of Python using flask <br/>
-Python <br/>
-HTML <br/>
-CSS <br/>
-Javascript <br/>
-Sublime/Atom text editors <br/>
+1-Flask <br/>
+2-Inbuilt module SQLite3 database of Python using flask <br/>
+3-Python (version-3.8.2) <br/>
+4-HTML <br/>
+5-CSS <br/>
+6-Javascript <br/>
+7-Sublime/Atom text editors <br/>
 
 * Setup/Installations required to run the solution <br/>
+ Only Flask is required to run the software as we have used the data base proved by sqlite3 which is in bulit in python
  Pip install flask(and in that all the required dependencies come installed) <br/>
 * Instructions to run the submitted code <br/>
 py -m venv env <br/>
