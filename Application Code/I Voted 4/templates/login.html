@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <script type="text/javascript"> 
+        function preventBack() { 
+            window.history.forward();  
+        } 
+          
+        setTimeout("preventBack()", 0); 
+          
+        window.onunload = function () { null }; 
+    </script> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+ 
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        html, body {
+            display: grid;
+            height: 100%;
+            width: 100%;
+        }
+        body{
+          background-image: url('static/second.jpeg');
+          background-size: cover;
+          background-position: center;
+        }
+
+
+        .type{
+          width: 46%;
+          margin-top: 4%;
+          color: #e8e8e8;
+          margin-left: 3%;
+          text-shadow: 3px 3px 5px black;
+          font-family: 'Poppins', sans-serif;
+        }
+        .ml2 {
+          font-weight: 600;
+          font-size: 2.6em;
+        }
+
+        .ml2 .letter {
+          display: inline-block;
+          line-height: 1em;
+        }
+        ::selection {
+            background: #4158d0;
+            color: #fff;
+        }
+
+        .wrapper {
+          position: absolute;
+            width: 27%;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 15px 20px rgba(0,0,0,0.5);
+            opacity: 0.85;
+            margin-left: 71.5%;
+            margin-top: 2%;
+        }
+
+            .wrapper .title {
+                font-size: 25px;
+                font-weight: 600;
+                text-align: center;
+                line-height: 80px;
+                color: #fff;
+                user-select: none;
+                border-radius: 15px 15px 0 0;
+                background: linear-gradient(-135deg, #808080, #000000);
+
+
+            }
+
+            .wrapper form {
+                padding: 10px 30px 50px 30px;
+            }
+
+                .wrapper form .field {
+                    height: 50px;
+                    width: 100%;
+                    margin-top: 20px;
+                    position: relative;
+                }
+
+                    .wrapper form .field input {
+                        height: 100%;
+                        width: 100%;
+                        outline: none;
+                        font-size: 17px;
+                        padding-left: 20px;
+                        border: 1px solid lightgrey;
+                        border-radius: 25px;
+                        transition: all 0.3s ease;
+                    }
+
+                        .wrapper form .field input:focus,
+                        form .field input:valid {
+                            border-color: #4158d0;
+                        }
+
+                    .wrapper form .field label {
+                        position: absolute;
+                        top: 50%;
+                        left: 20px;
+                        color: #999999;
+                        font-weight: 400;
+                        font-size: 17px;
+                        pointer-events: none;
+                        transform: translateY(-50%);
+                        transition: all 0.3s ease;
+                    }
+
+        form .field input:focus ~ label,
+        form .field input:valid ~ label {
+            top: 0%;
+            font-size: 16px;
+            color: #4158d0;
+            background: #fff;
+            transform: translateY(-50%);
+        }
+
+        form .content {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            font-size: 16px;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+            form .content .checkbox {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            form .content input {
+                width: 15px;
+                height: 15px;
+                background: red;
+            }
+
+            form .content label {
+                color: #262626;
+                user-select: none;
+                padding-left: 5px;
+            }
+
+            form .content .pass-link {
+                color: "";
+            }
+
+        form .field input[type="submit"] {
+            color: #fff;
+            border: none;
+            padding-left: 0;
+            margin-top: -10px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            background: linear-gradient(-135deg, #808080, #000000);
+
+            transition: all 0.3s ease;
+        }
+
+            form .field input[type="submit"]:active {
+                transform: scale(0.95);
+            }
+
+        form .signup-link {
+            color: #262626;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+            form .pass-link a,
+            form .signup-link a {
+                color: #4158d0;
+                text-decoration: none;
+            }
+
+                form .pass-link a:hover,
+                form .signup-link a:hover {
+                    text-decoration: underline;
+                }
+                                @media (min-width:750px) and (max-width:950px) {
+                  .type{
+                    width:100%;
+                  }
+                  .wrapper{
+                    margin-left: 37%;
+                    margin-top: 25%;
+                    width:30%;
+                    margin-bottom: 4%;
+                  }
+                  .ml2{
+                    text-align: center;
+                    margin-right: 2%;
+                  }
+                }
+                @media (max-width:749px) {
+                  .type{
+                    width:100%;
+                  }
+                  .ml2{
+                    font-size: 2.0em;
+                    font-weight: 500;
+                    margin-right: 2%;
+                    text-align: center;
+                  }
+                  .wrapper{
+                    margin-left: 30%;
+                    margin-top: 34%;
+                    width: 45%;
+                    margin-bottom: 4%;
+                  }
+                  .wrapper .title{
+                    line-height: 70px;
+                    font-size: 20px;
+                  }
+                }
+                @media (max-width:500px) {
+                  .ml2{
+                    font-size: 195%;
+
+                  }
+                  .type{
+                    margin-right: 3%;
+                  }
+                  .wrapper{
+                    width:50%;
+                    margin-bottom: 4%;
+                  }
+
+                }
+
+    </style>
+  </head>
+    <body>
+
+      <div class="type">
+        <h1 class="ml2">Leadership is not about the  next election, it's about the next generation.</h1>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      </div>
+
+
+
+
+
+      <div class="wrapper">
+          <div class="title">
+              I Voted! Please login
+          </div>
+          <form action="{{url_for('login')}}"method='POST'>
+            <br>
+                 <label for="Post">ID:</label>
+                <select name='client_select' required id="Post">
+                  <option value="V">Voter</option>
+                  <option value="A">Admin</option>
+                </select>
+                <br>
+
+              <div class="field">
+                  <input type="text" name='email' required>
+                  <label>Email Address</label>
+              </div>
+              <div class="field">
+                  <input type="password" name='password'required>
+                  <label>Password</label>
+              </div>
+              <div class="content">
+
+                  <div class="pass-link">
+                      <a href="#">Forgot password?</a>
+                  </div>
+              </div>
+              <div class="field">
+                  <input type="submit" value="Login">
+              </div>
+
+          </form>
+      </div>
+
+
+    <script>
+    var textWrapper = document.querySelector('.ml2');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: true})
+    .add({
+      targets: '.ml2 .letter',
+      scale: [4,1],
+      opacity: [0,1],
+      translateZ: 0,
+      easing: "easeOutExpo",
+      duration: 950,
+      delay: (el, i) => 70*i
+    }).add({
+      targets: '.ml2',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+
+
+    </script>
+
+
+    </body>
+    </html>

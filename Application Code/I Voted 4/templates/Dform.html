@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript"> 
+    function preventBack() { 
+        window.history.forward();  
+    } 
+      
+    setTimeout("preventBack()", 0); 
+      
+    window.onunload = function () { null }; 
+</script> 
+	 <style type="text/css">
+    body {     
+    background: url(https://images.unsplash.com/photo-1571292098320-997aa03a5d19?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=588&q=80) no-repeat;
+      background-size: cover;
+        background-attachment: fixed;
+  background-position: center;
+      font-family: 'ABeeZee', sans-serif;
+        color: #eaeaea;
+      }
+
+.nav-content {
+  /*background-color: #6bccdb;*/
+  background: linear-gradient(-135deg, #808080, #000000);
+  position: fixed;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    margin-left: 0%;
+        top: 0;
+    left: 0;
+     z-index: 1;
+}
+.menu-list {
+    position: relative;
+    display: inline-block;
+    min-width: 300px;
+    text-align: right;
+    height: 40%;
+    padding-right: 200px;
+}
+.menu-list ul#menu {
+    position: relative;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+}
+#menu li {
+    list-style: none;
+    padding: 2px 10px;
+    margin: 0 0.3vh;
+    color: #eaeaea;
+}
+#menu li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+}
+#menu li a:hover {
+    color: #bbbfca;
+}
+.box .title{
+  font-size: 100%;
+  font-weight: 200;
+  text-align: center;
+  line-height: 80px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(-135deg, #808080, #000000);
+
+}
+
+
+    .box{
+      text-align: center;
+      padding-bottom: 1.5%;
+  background: linear-gradient(45deg,white,#80DFEE);
+      height: 100%;
+      width: 35%;
+      margin: auto;
+      margin-top: 10%;
+      margin-bottom: 5%;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.7);
+  opacity: 0.94;
+  color: #19588c;
+    }
+    .text{
+      font-size: 110%;
+    }
+    .myButton {
+      box-shadow:inset 0px -1px 0px 0px linear-gradient(-135deg, #808080, #000000);
+    /*  background-color:#80dfee;*/
+      background: linear-gradient(-135deg, #808080, #000000);
+      border-radius:8px;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:15px;
+      font-weight:bold;
+      padding:8px 24px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px linear-gradient(-135deg, #808080, #000000);
+    }
+    .myButton:hover {
+      background-color:#80dfee;
+    }
+    .myButton:active {
+      position:relative;
+      top:1px;
+    }
+    header{
+      position: absolute;
+      padding-left: 100px;
+    }
+    header .I_VOTED{
+      color:#fff;
+      height:50px;
+      line-height: 50px;
+      float: left;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    header nav{
+      float:right;
+    }
+    .menu-toggle{
+      float: right;
+      color: #fff;
+      line-height: 50px;
+      font-size: 24px;
+      cursor: pointer;
+      display: none;
+    }
+    @media (max-width:1022px) {
+      header{
+        padding-left: 20px;
+      }
+      .menu-toggle{
+        padding-right: 35px;
+        display: block;
+      }
+      .menu-list{
+
+        position: absolute;
+        width: 100%;
+        height: 32vh;
+        background: linear-gradient(-135deg, #808080, #000000);
+        top: 50px;
+        left: -200%;
+        transition: 0.5s;
+      }
+      header nav.active{
+        left: 0;
+      }
+      .menu-list ul#menu {
+        display: block;
+        text-align: center;
+      }
+      #menu li a{
+        padding-top: 5px 0;
+        border-bottom: 1px solid rgba(0,0,0,.2);
+      }
+    }
+    @media (max-width:500px) {
+      .box{
+        width: 70%;
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+        padding-bottom: 1.5rem;
+      }
+  
+    }
+
+
+
+	</style>
+    <meta charset="UTF-8">
+    <title>Delete Form</title>
+</head>
+<body>
+  <header class="nav-content">
+    <div class="I_VOTED"> I VOTED!</div>
+          <nav class="menu-list">
+            <ul id="menu">
+              <li><a href='admin'>Home</a></li>
+               <li><a href='/cform'>Add Candidate</a></li>
+               <li><a href='/dform'>Delete Candidate</a></li>
+               <li><a href='results'>Results</a></li>
+               <li ><a href='logout'>Logout</a></li>
+            </ul>
+          </nav>
+      <div class="menu-toggle"> <i class="fas fa-bars"></i></div>
+  </header>
+
+	<div class="box" >
+		    <div class="title">
+      <h1>Delete Candidate:</h1>
+    </div>
+		<form method='POST'>
+  <div class="text">
+    <label for="inputname">Name</label>
+      <span style="margin-left: 2%; ">
+      <input type="text" placeholder="abc" id="inputname" name="name" required>
+      </span>
+      <br>
+      <label for="inputEmail">Email</label>
+      <span style="margin-left: 2%; ">
+      <input type="email" placeholder="abc@gmail.com" id="inputEmail" name='email'required>
+      </span>
+	    <br>
+      <br>
+      <br>
+      <label for="Post">For Post Of:</label>
+      <select name='post_select' required id="Post">
+        <option value="VP">Vice President</option>
+        <option value="G.sec">G.sec</option>
+        <option value="C.sec">Cultural Secretary</option>
+        <option value="M.sec">Mess Secretary</option>
+      </select>
+      <br>
+      <br>
+  	  <input class="myButton" type="submit" value="submit"> <!--onclick="{Berry}">-->
+
+</div>
+</form>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.js"  crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.menu-toggle').click(function(){
+      $('nav').toggleClass('active')
+    })
+  })
+
+</script>
+
+</body>
+</html>
