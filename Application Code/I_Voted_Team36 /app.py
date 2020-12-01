@@ -150,17 +150,23 @@ def login():
 		if (user=='V'):
 			with sqlite3.connect('votingbase.db') as conn:
 				cur=conn.cursor()
-				cur.execute('SELECT email,password FROM voter_records')
+				cur.execute('SELECT email,password,vp_count,gs_count,cs_count,ms_count FROM voter_records')
 				data=cur.fetchall()
 				for i in data:
-					if (i[0]==emailid) and (i[1]==password):
+					if (i[0]==emailid) and (i[1]==password) and i[2]==0 and i[3]==0 and i[4]==0 and i[5]==0:
 						k=1
+						break
+					elif (i[0]==emailid) and (i[1]==password) and i[2]==1 and i[3]==1 and i[4]==1 and i[5]==1:
+						k=3
 						break
 					else:
 						k=2
 				if k==1:
 					session['username']=log_info['email']
 					return redirect(url_for('voter'))
+				elif k==3:
+					msg="Already voted"
+					return redirect(url_for('index',msg=msg))
 				else:
 					msg="Try Again"
 					return redirect(url_for('index',msg=msg))
