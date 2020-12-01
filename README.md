@@ -28,11 +28,11 @@ If the voter has voted then it will not be allowed to login again and if the vot
 
 when the admins logs in it can delete and Add a Candidate details, its aslo has results tabs which show dynmic result for each post <br/>
 
-when the votter logs in to portal the votter redirected to the Vice President voting page <br/>
+when the voter logs in to portal the votter redirected to the Vice President voting page <br/>
 
-Once the votter has ticked the choice of candidate and pressed the vote button the votter will be redurected to the voting page for nrxt post and then logout eventally <br/>
+Once the voter has ticked the choice of candidate and pressed the vote button the voter will be redirected to the voting page for nrxt post and then logout eventally <br/>
 
-All the working video (part1 and part2) is uploaded in link below along with the presentation which provides the details discription
+All the working video (part1 and part2) is uploaded in link below along with the presentation which provides the details discription <br/>
 link- https://drive.google.com/drive/folders/1thR8TBWnu5db4uHCOsF6J8cJuKVqbuK2?usp=sharing <br/>
 
 
