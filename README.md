@@ -1,5 +1,4 @@
 
-=======
 ## Team Number \<36> - \<I Voted !>
 
 ### Project Overview
@@ -107,4 +106,3 @@ https://www.tutorialspoint.com/sqlite/sqlite_create_database.htm <br/>
 https://developer.mozilla.org/en-US/ <br/>
 https://flask.palletsprojects.com/en/1.1.x/
 
->>>>>>> 5ffb1cbba16a3a115b4392477bdb4415b1f398bb
