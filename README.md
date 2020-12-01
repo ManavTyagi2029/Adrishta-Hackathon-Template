@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-hii
+
 =======
 ## Team Number \<36> - \<I Voted !>
 
