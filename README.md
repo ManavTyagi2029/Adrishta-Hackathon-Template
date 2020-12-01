@@ -73,9 +73,21 @@ flask run <br/>
 
 ### Screenshots
 
+add1.jpeg
 
 
-
+![](images/adminlogin.png) <br/>
+![](images/homeadmin.jpeg) <br/>
+![](images/delete1.jpeg) <br/>
+![](images/delete2.jpeg) <br/>
+![](images/add1.jpeg) <br/>
+![](images/add2.jpeg) <br/>
+![](images/noresults.jpeg) <br/>
+Condition when no voters have votes. <br/>
+![](images/results1.jpeg) <br/>
+Condition when voting started. <br/>
+![](images/voterlogin.jpeg) <br/>
+![](images/voterinside.jpeg) <br/>
 
 
 
