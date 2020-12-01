@@ -27,21 +27,21 @@ This project is mainly to help the colleges with college council elections since
  
 
 #### Technical Description
-* What technologies/versions were used<br/>
+* What technologies/versions were used <br/>
 Flask <br/>
-Inbuilt module SQLite3 database of Python using flask<br/>
-Python
-HTML
-CSS
-Javascript
-Sublime/Atom text editors
+Inbuilt module SQLite3 database of Python using flask <br/>
+Python <br/>
+HTML <br/>
+CSS <br/>
+Javascript <br/>
+Sublime/Atom text editors <br/>
 
-* Setup/Installations required to run the solution
+* Setup/Installations required to run the solution <br/>
  Pip install flask(and in that all the required dependencies come installed)
-* Instructions to run the submitted code
-py -m venv env
-env\Scripts\activate
-set FLASK_APP=app.py
+* Instructions to run the submitted code <br/>
+py -m venv env <br/>
+env\Scripts\activate <br/>
+set FLASK_APP=app.py <br/>
 
 ### Screenshots
 
@@ -56,9 +56,9 @@ set FLASK_APP=app.py
 
 
 ### Team Members
-|Manav Tyagi | manav507@gmail.com|Frontend, Flowchart|
-|Kritika Berry|kritikaberry@gmail.com|Backend and Documentation|
-|Preeti Das|preetidas1609@gmail.com| Frontend, Presentation and Documentation|
+|Manav Tyagi | manav507@gmail.com|Frontend, Flowchart|  <br/>
+|Kritika Berry|kritikaberry@gmail.com|Backend and Documentation| <br/>
+|Preeti Das|preetidas1609@gmail.com| Frontend, Presentation and Documentation| <br/>
 
 ### References
 https://stackoverflow.com/
