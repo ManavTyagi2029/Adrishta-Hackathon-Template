@@ -37,7 +37,7 @@ Javascript <br/>
 Sublime/Atom text editors <br/>
 
 * Setup/Installations required to run the solution <br/>
- Pip install flask(and in that all the required dependencies come installed)
+ Pip install flask(and in that all the required dependencies come installed) <br/>
 * Instructions to run the submitted code <br/>
 py -m venv env <br/>
 env\Scripts\activate <br/>
@@ -61,8 +61,9 @@ set FLASK_APP=app.py <br/>
 |Preeti Das|preetidas1609@gmail.com| Frontend, Presentation and Documentation| <br/>
 
 ### References
-https://stackoverflow.com/
-https://www.javatpoint.com/
-https://www.tutorialspoint.com/sqlite/sqlite_create_database.htm
-https://developer.mozilla.org/en-US/
+https://stackoverflow.com/ <br/>
+https://www.javatpoint.com/ <br/>
+https://www.tutorialspoint.com/sqlite/sqlite_create_database.htm <br/>
+https://developer.mozilla.org/en-US/ <br/>
+https://flask.palletsprojects.com/en/1.1.x/
 
