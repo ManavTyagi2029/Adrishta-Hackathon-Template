@@ -27,9 +27,9 @@ This project is mainly to help the colleges with college council elections since
  
 
 #### Technical Description
-* What technologies/versions were used
+* What technologies/versions were used<br/>
 Flask <br/>
-Inbuilt module SQLite3 database of Python using flask
+Inbuilt module SQLite3 database of Python using flask<br/>
 Python
 HTML
 CSS
