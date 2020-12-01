@@ -60,13 +60,14 @@ link- https://drive.google.com/drive/folders/1thR8TBWnu5db4uHCOsF6J8cJuKVqbuK2?u
 7-Sublime/Atom text editors <br/>
 
 * Setup/Installations required to run the solution <br/>
- Only Flask is required to run the software as we have used the data base proved by sqlite3 which is in bulit in python
- Pip install flask(and in that all the required dependencies come installed) <br/>
+ Only Flask is required to run the software as we have used the data base proved by sqlite3 which is in bulit in python <br/>
 * Instructions to run the submitted code <br/>
 py -m venv env <br/>
-env\Scripts\activate <br/>
+Pip install flask  <br/>
+env\scripts\activate <br/>
 set FLASK_APP=app.py <br/>
 flask run <br/>
+
 ### Screenshots
 
 
