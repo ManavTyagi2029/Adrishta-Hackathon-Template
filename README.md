@@ -28,13 +28,13 @@ This project is mainly to help the colleges with college council elections since
 
 #### Technical Description
 * What technologies/versions were used
-###Flask
-###Inbuilt module SQLite3 database of Python using flask
-###Python
-###HTML
-###CSS
-###Javascript
-###Sublime/Atom text editors
+Flask
+Inbuilt module SQLite3 database of Python using flask
+Python
+HTML
+CSS
+Javascript
+Sublime/Atom text editors
 
 * Setup/Installations required to run the solution
  Pip install flask(and in that all the required dependencies come installed)
