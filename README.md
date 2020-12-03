@@ -32,8 +32,6 @@ when the voter logs in to portal the votter redirected to the Vice President vot
 
 Once the voter has ticked the choice of candidate and pressed the vote button the voter will be redirected to the voting page for nrxt post and then logout eventally <br/>
 
-All the working video (part1 and part2) is uploaded in link below along with the presentation which provides the details discription <br/>
-link- https://drive.google.com/drive/folders/1thR8TBWnu5db4uHCOsF6J8cJuKVqbuK2?usp=sharing <br/>
 
 
 
